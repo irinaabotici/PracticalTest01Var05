@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/navigate_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:onClick="changeButtonToHide"
+        android:text="NAVIGATE TO SECONDARY ACTIVITY" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/top_left_button"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="TOP LEFT"/>
+        <Button
+            android:id="@+id/top_right_button"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="160dp"
+            android:text="TOP RIGHT"/>
+    </LinearLayout>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="150dp"
+            android:text="CENTER"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bottom_left_button"
+            android:layout_width="146dp"
+            android:layout_height="50dp"
+            android:text="BOTTOM LEFT" />
+
+        <Button
+            android:id="@+id/bottom_right_button"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:text="BOTTOM RIGHT"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/concatenate_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:textColor="@color/white"
+            android:hint="text" />
+    </LinearLayout>
+</LinearLayout>
